@@ -1,38 +1,158 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to bottom right, #f2ecec, #151414);}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.detail-container {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+table {
+  margin: 10px auto;
+  margin-top: 7em;
+}
+
+thead th {
+  font-weight: 400;
+  background: linear-gradient(to bottom right, #151414, #f2ecec);
+  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #fff;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px;
+  font-weight: 300;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px 90px;
+}
+
+.bottom-buttons {
+  padding: 12px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border-width: 4px;
+  border-radius: 12px;
+  border-style: solid;
+  cursor: pointer;
+  transition: 0.3s all;
+  text-transform: uppercase;
+}
+
+.prev-button {
+  background-color: rgb(243, 53, 53);
+  border-color: black;
+  color: black;
+}
+
+.prev-button:hover {
+  background-color: #f2ff04;
+  border-color: black;
+}
+
+.prev-button:disabled {
+  background-color: rgb(243, 53, 53);
+  border-color: black;
+  color: black;
+}
+
+.next-button {
+  background-color: rgb(243, 53, 53);
+  border-color: black;
+  color: black;
+}
+
+.next-button:hover {
+  background-color: #f2ff04;
+  border-color: black;
+}
+
+.user-button {
+  background: none;
+  color: black;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.user-button:hover {
+  text-decoration: underline;
+}
+
+.basic-card {
+  position: relative;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  width: 500px;
+}
+
+.basic-card .card-content {
+  padding: 30px;
+}
+
+.basic-card .card-title {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.basic-card .card-heading {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+
+.basic-card .card-text {
+  line-height: 1.6;
+}
+
+.basic-card-lips {
+  background-image: linear-gradient(to bottom right, #1f1b1d, #de1c1c);
+}
+
+.basic-card-lips .card-content {
+  color: #fff;
+}
+
+.card-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.height {
+  height: 80vh;
+  overflow-x: auto;
 }
